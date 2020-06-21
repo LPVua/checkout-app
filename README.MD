@@ -1,6 +1,7 @@
 # Customer reviews
 
 Simple customer reviews application with reviews trends chart
+
 ![Demo](./__assets/demo.gif)
 
 ## Application architeture
