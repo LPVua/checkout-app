@@ -24,37 +24,52 @@ const Template: React.FunctionComponent<{
       label="Name"
       value={props.context.formValues.name}
       className={style.input}
+      data-testid="name-input"
+      isError={
+        !!props.context.formErrors.name && props.context.touchedFields.name
+      }
       onChange={(value) => props.onUpdateForm("name", value)}
     />
     {!!props.context.formErrors.name && props.context.touchedFields.name && (
-      <Error className={style.error}>{props.context.formErrors.name}</Error>
+      <Error data-testid="name-error" className={style.error}>
+        {props.context.formErrors.name}
+      </Error>
     )}
 
     <Input
       label="Email"
       className={style.input}
+      data-testid="email-input"
       value={props.context.formValues.email}
       onChange={(value) => props.onUpdateForm("email", value)}
+      isError={
+        !!props.context.formErrors.email && props.context.touchedFields.email
+      }
     />
     {!!props.context.formErrors.email && props.context.touchedFields.email && (
-      <Error className={style.error}>{props.context.formErrors.email}</Error>
+      <Error data-testid="email-error" className={style.error}>
+        {props.context.formErrors.email}
+      </Error>
     )}
 
     <InputRating
       className={style.input}
       label={"Rating"}
       value={String(props.context.formValues.rating)}
+      data-testid="rating-input"
       onChange={(value) => props.onUpdateForm("rating", Number(value))}
     />
 
     <InputTextarea
       label="Comments"
+      data-testid="comments-input"
       className={style.input}
       value={props.context.formValues.comments}
       onChange={(value) => props.onUpdateForm("comments", value)}
     />
 
     <Button
+      data-testid="submit-button"
       isDisabled={props.isSubmitButtonDisabled}
       onClick={props.onAddReview}
     >
@@ -83,12 +98,17 @@ export const ReviewForm: React.FunctionComponent<{
     });
   };
 
+  const onAddReview = () => {
+    props.onAddReview(currentState.context.formValues);
+    sendEvent("ADD_REVIEW");
+  };
+
   return (
     <Template
       className={props.className}
       isSubmitButtonDisabled={!currentState.matches("dirty")}
       onUpdateForm={onUpdateForm}
-      onAddReview={() => props.onAddReview(currentState.context.formValues)}
+      onAddReview={onAddReview}
       context={currentState.context}
     />
   );

@@ -57,10 +57,15 @@ export const happinessChart = css({
 
 export const title = css({
   lineHeight: "22px",
-  fontWeight: "bold",
+  fontSize: '1.8rem',
   marginBottom: "1.2rem",
 });
 
 export const form = css({
   marginBottom: "1.2rem",
 });
+
+
+export const card = css({
+  marginBottom: "1.2rem",
+})

@@ -8,6 +8,7 @@ export const Button: React.FunctionComponent<{
   onClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void;
 }> = (props) => (
   <button
+    data-testid={props["data-testid"]}
     onClick={props.isDisabled ? functionNoop : props.onClick}
     className={cx(style.button, props.isDisabled && style.disabled)}
   >

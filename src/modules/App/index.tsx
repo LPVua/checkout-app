@@ -68,13 +68,15 @@ export const Template: React.FunctionComponent<{
       <>
         <div className={style.title}>Latest Reviews</div>
         {props.context.reviews.reduceRight(
-          (list, review) => [
+          (list, review, index) => [
             ...list,
             <CardReview
+              key={index}
               title={review.name}
               rating={review.rating}
               subtitle={review.email}
               description={review.comments}
+              className={style.card}
             />,
           ],
           []

@@ -8,6 +8,6 @@ export const InputTextarea: React.FunctionComponent<InputPropsInterface> = ({
   ...props
 }) => (
   <Input {...props}>
-    <textarea rows={6} className={style.textarea} />
+    <textarea rows={6} className={style.textarea} data-testid={"input"} />
   </Input>
 );

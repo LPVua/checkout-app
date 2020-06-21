@@ -5,5 +5,10 @@ import { cx } from "emotion";
 export const Error: React.FunctionComponent<{
   className?: string;
 }> = (props) => (
-  <div className={cx(style.error, props.className)}>{props.children}</div>
+  <div
+    className={cx(style.error, props.className)}
+    data-testid={props["data-testid"]}
+  >
+    {props.children}
+  </div>
 );

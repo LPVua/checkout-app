@@ -2,21 +2,23 @@ import { Machine } from "xstate";
 import { ReviewFormContextInterface } from "./context.interface";
 import { actions } from "./actions";
 
+export const defaultContext = {
+  formValues: {
+    name: "",
+    email: "",
+    rating: 5,
+    comments: "",
+  },
+  formErrors: {
+    name: "",
+    email: "",
+  },
+  touchedFields: {},
+};
+
 export const reviewFormMachine = Machine<ReviewFormContextInterface>(
   {
-    context: {
-      formValues: {
-        name: "",
-        email: "",
-        rating: 5,
-        comments: "",
-      },
-      formErrors: {
-        name: "",
-        email: "",
-      },
-      touchedFields: {},
-    },
+    context: defaultContext,
     initial: "idle",
     on: {
       INPUT: {
@@ -33,7 +35,14 @@ export const reviewFormMachine = Machine<ReviewFormContextInterface>(
           FORM_IS_NOT_VALID: "error",
         },
       },
-      dirty: {},
+      dirty: {
+        on: {
+          ADD_REVIEW: {
+            target: "idle",
+            actions: ["clearForm"],
+          },
+        },
+      },
       error: {},
     },
   },

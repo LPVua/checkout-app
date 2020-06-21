@@ -21,10 +21,13 @@ export const Input: React.FunctionComponent<PropsInterface> = ({
   });
   const onChange = (e: React.FormEvent<HTMLInputElement>) =>
     onChangeProp(e.currentTarget.value);
-  const childInput = props.children || <input onChange={onChange}></input>;
+  const childInput = props.children || (
+    <input data-testid="input" onChange={onChange}></input>
+  );
 
   return (
     <div
+      data-testid={props["data-testid"]}
       className={cx([
         style.container.default,
         isFocused && style.container.focused,

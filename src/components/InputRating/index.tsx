@@ -14,6 +14,7 @@ const Template: React.FunctionComponent<{
   <div className={cx(style.rating, props.className)}>
     {"12345".split("").map((rating) => (
       <div
+        data-testid={`rating-${rating}`}
         className={cx(style.item, rating === value && style.itemSelected)}
         onClick={() => onChange(rating)}
         key={rating}

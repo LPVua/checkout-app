@@ -7,8 +7,7 @@ export interface PropsInterface extends UseFocusHookPropsInterface {
   isError?: boolean;
 
   /**
-   * Label which will be shown instead of placeholder.
-   * Will move up and will be visible after user will set input value
+   * Label
    */
   label?: string;
 

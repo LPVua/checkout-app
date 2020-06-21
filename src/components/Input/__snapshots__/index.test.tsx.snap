@@ -1,0 +1,543 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input should add error styles to both container and label 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-1 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+  border-color: var(--red-1) !important;
+}
+
+.emotion-0 {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.2rem;
+  width: auto;
+  color: #95a5a6;
+  -webkit-transform: translateY(0.2rem) scale(1);
+  -ms-transform: translateY(0.2rem) scale(1);
+  transform: translateY(0.2rem) scale(1);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transition: transform .15s linear;
+  transition: transform .15s linear;
+  z-index: 0;
+  color: var(--red-1);
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      some label
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <input
+        class="emotion-1"
+        data-testid="input"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input should add focus styles to the container 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-0 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+  border: .1rem solid var(--blue-1);
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <input
+        class="emotion-0"
+        data-testid="input"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input should add focus styles to the label container 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-1 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+  border: .1rem solid var(--blue-1);
+}
+
+.emotion-0 {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.2rem;
+  width: auto;
+  color: #95a5a6;
+  -webkit-transform: translateY(0.2rem) scale(1);
+  -ms-transform: translateY(0.2rem) scale(1);
+  transform: translateY(0.2rem) scale(1);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transition: transform .15s linear;
+  transition: transform .15s linear;
+  z-index: 0;
+  -webkit-transform: translateY(-0.6rem) scale(.75);
+  -ms-transform: translateY(-0.6rem) scale(.75);
+  transform: translateY(-0.6rem) scale(.75);
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      some label
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <input
+        class="emotion-1"
+        data-testid="input"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input should remove focus styles from the container 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-0 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <input
+        class="emotion-0"
+        data-testid="input"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input should render input with label 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+}
+
+.emotion-0 {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.2rem;
+  width: auto;
+  color: #95a5a6;
+  -webkit-transform: translateY(0.2rem) scale(1);
+  -ms-transform: translateY(0.2rem) scale(1);
+  transform: translateY(0.2rem) scale(1);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transition: transform .15s linear;
+  transition: transform .15s linear;
+  z-index: 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-1 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      some label
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <input
+        class="emotion-1"
+        data-testid="input"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input should render proper markup 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-0 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+}
+
+<div
+    class="emotion-2"
+  >
+    <div
+      class="emotion-1"
+    >
+      <input
+        class="emotion-0"
+        data-testid="input"
+        value=""
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Input should use a textarea as an input 1`] = `
+<DocumentFragment>
+  .emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+}
+
+.emotion-0 {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.2rem;
+  width: auto;
+  color: #95a5a6;
+  -webkit-transform: translateY(0.2rem) scale(1);
+  -ms-transform: translateY(0.2rem) scale(1);
+  transform: translateY(0.2rem) scale(1);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transition: transform .15s linear;
+  transition: transform .15s linear;
+  z-index: 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-1 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+}
+
+<div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-0"
+    >
+      some label
+    </div>
+    <div
+      class="emotion-2"
+    >
+      <textarea
+        class="emotion-1"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

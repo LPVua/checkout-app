@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReviewForm should render properly 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.2rem;
+  width: auto;
+  color: #95a5a6;
+  -webkit-transform: translateY(0.2rem) scale(1);
+  -ms-transform: translateY(0.2rem) scale(1);
+  transform: translateY(0.2rem) scale(1);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transition: transform .15s linear;
+  transition: transform .15s linear;
+  z-index: 0;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: var(--dark-1);
+  z-index: 1;
+}
+
+.emotion-9 {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: .6rem;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 4.8rem;
+  border: .1rem solid var(--grey-1);
+  background: white;
+  border-radius: .3rem;
+  margin-bottom: .4rem;
+}
+
+.emotion-1 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+}
+
+.emotion-8 {
+  position: absolute;
+  left: 1.8rem;
+  top: 1.2rem;
+  width: auto;
+  color: #95a5a6;
+  -webkit-transform: translateY(0.2rem) scale(1);
+  -ms-transform: translateY(0.2rem) scale(1);
+  transform: translateY(0.2rem) scale(1);
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transition: transform .15s linear;
+  transition: transform .15s linear;
+  z-index: 0;
+  -webkit-transform: translateY(-0.6rem) scale(.75);
+  -ms-transform: translateY(-0.6rem) scale(.75);
+  transform: translateY(-0.6rem) scale(.75);
+}
+
+.emotion-14 {
+  padding: 0 1.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+}
+
+.emotion-13 {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: .6rem;
+  background: var(--blue-1);
+  color: var(--white-1);
+  border-radius: 3.6rem;
+}
+
+.emotion-18 {
+  padding: .6rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  padding-left: 1.8rem;
+  border-radius: .3rem;
+  border: none;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  padding-top: 1.8rem;
+  resize: none;
+}
+
+.emotion-21 {
+  height: 4.8rem;
+  border: none;
+  background: var(--blue-1);
+  color: var(--white-1);
+  font-size: inherit;
+  border-radius: .3rem;
+  padding: 0 .8rem;
+  margin: 0;
+  outline: none;
+  -webkit-transition: background .3s linear;
+  transition: background .3s linear;
+  pointer-events: none;
+  opacity: .5;
+}
+
+.emotion-21:active {
+  background: var(--blue-2);
+}
+
+<div>
+    <div
+      class="emotion-3"
+      data-testid="name-input"
+    >
+      <div
+        class="emotion-0"
+      >
+        Name
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <input
+          class="emotion-1"
+          data-testid="input"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="email-input"
+    >
+      <div
+        class="emotion-0"
+      >
+        Email
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <input
+          class="emotion-1"
+          data-testid="input"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="rating-input"
+    >
+      <div
+        class="emotion-8"
+      >
+        Rating
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <div
+          class="emotion-14"
+        >
+          <div
+            class="emotion-9"
+            data-testid="rating-1"
+          >
+            1
+          </div>
+          <div
+            class="emotion-9"
+            data-testid="rating-2"
+          >
+            2
+          </div>
+          <div
+            class="emotion-9"
+            data-testid="rating-3"
+          >
+            3
+          </div>
+          <div
+            class="emotion-9"
+            data-testid="rating-4"
+          >
+            4
+          </div>
+          <div
+            class="emotion-13"
+            data-testid="rating-5"
+          >
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-3"
+      data-testid="comments-input"
+    >
+      <div
+        class="emotion-0"
+      >
+        Comments
+      </div>
+      <div
+        class="emotion-2"
+      >
+        <textarea
+          class="emotion-18"
+          data-testid="input"
+          rows="6"
+        />
+      </div>
+    </div>
+    <button
+      class="emotion-21"
+      data-testid="submit-button"
+    >
+      Add Review
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,8 +1,17 @@
 import { assign, EventObject, send } from "xstate";
 import { ReviewFormContextInterface } from "./context.interface";
 import { validatorEmail } from "@acme-client/utils/validator/email";
+import { defaultContext } from "./machine";
 
 export const actions = {
+  /**
+   * Clear form context
+   */
+  clearForm: assign(() => defaultContext),
+
+  /**
+   * Update form errors context
+   */
   updateFormErrors: assign({
     formErrors: (context: ReviewFormContextInterface) => {
       return {
@@ -13,6 +22,10 @@ export const actions = {
       };
     },
   }),
+
+  /**
+   * Check if form is valid and send validation events
+   */
   checkIfFormIsValid: send((context: ReviewFormContextInterface) => {
     if (
       Object.keys(context.formErrors).find((key) => context.formErrors[key])
@@ -25,6 +38,10 @@ export const actions = {
       type: "FORM_IS_VALID",
     };
   }),
+
+  /**
+   * Update form values in the context
+   */
   updateFormValues: assign({
     formValues: <K extends keyof ReviewFormContextInterface["formValues"]>(
       context,
@@ -34,13 +51,15 @@ export const actions = {
           value: ReviewFormContextInterface["formValues"][K];
         };
       }
-    ) => {
-      return {
-        ...context.formValues,
-        [event.payload.key]: event.payload.value,
-      };
-    },
+    ) => ({
+      ...context.formValues,
+      [event.payload.key]: event.payload.value,
+    }),
   }),
+
+  /**
+   * Set touched fields
+   */
   setTouchedFields: assign({
     touchedFields: <K extends keyof ReviewFormContextInterface["formValues"]>(
       context,

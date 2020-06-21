@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error should render proper markup 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: var(--red-1);
+}
+
+<div
+    class="emotion-0"
+  >
+    Message
+  </div>
+</DocumentFragment>
+`;
